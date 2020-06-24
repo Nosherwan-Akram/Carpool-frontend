@@ -36,4 +36,4 @@ export const get = async (url) => {
   return data;
 };
 
-export const base_url = "http://13.127.7.145:5000/";
+export const base_url = "http://35.154.154.6:5000/";
