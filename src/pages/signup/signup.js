@@ -10,12 +10,14 @@ class Signup extends Component {
     signedUp: false,
   };
   registerUser = (formData) => {
-    signupRequest(formData).then((res) => {
-      if (res.msgtype === "success") {
-        console.log(res);
-        this.setState({ signedUp: true });
-      }
-    });
+    signupRequest(formData)
+      .then((res) => {
+        if (res.msgtype === "success") {
+          console.log(res);
+          this.setState({ signedUp: true });
+        }
+      })
+      .catch((err) => alert({ err }));
   };
   render() {
     return (

@@ -6,7 +6,9 @@ import { bookRideRequest } from "../services/secure/ride_service";
 const BookingRide = (props) => {
   let bookRide = () => {
     console.log(props);
-    bookRideRequest({ rideId: props._id }).then((res) => console.log(res));
+    bookRideRequest({ rideId: props._id })
+      .then((res) => console.log(res))
+      .catch((err) => alert(err));
   };
   return (
     <div>

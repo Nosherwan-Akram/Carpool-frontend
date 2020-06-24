@@ -14,7 +14,7 @@ class MakeRide extends React.Component {
       .then((res) => {
         this.setState({ cities: res.payload });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => alert(err));
   }
   makeRideHandler = (driveData) => {
     let formData = driveData;

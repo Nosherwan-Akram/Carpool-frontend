@@ -26,7 +26,7 @@ class Login extends Component {
         localStorage.setItem("role", res.payload.role);
         this.setState({ loggedIn: true, role: res.payload.role });
       })
-      .catch((err) => console.log({ err }));
+      .catch((err) => alert({ err }));
   };
   render() {
     return (

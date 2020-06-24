@@ -16,7 +16,7 @@ class BookedRides extends Component {
     bookedRideRequest()
       .then((res) => this.setState({ rides: res.payload }))
       .catch((err) => {
-        console.log(err);
+        alert(err);
       });
   };
   showSelectedRide = (ride) => {

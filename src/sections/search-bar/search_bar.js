@@ -8,9 +8,11 @@ class SearchBar extends Component {
   };
 
   componentDidMount = () => {
-    getAllCities().then((res) => {
-      this.setState({ cities: res.payload });
-    });
+    getAllCities()
+      .then((res) => {
+        this.setState({ cities: res.payload });
+      })
+      .catch((err) => alert(err));
   };
 
   searchRides = (values) => {

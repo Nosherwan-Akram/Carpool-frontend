@@ -10,7 +10,7 @@ const CancelRide = (props) => {
         console.log(res);
       })
       .catch((err) => {
-        console.log(err);
+        alert(err);
       });
   };
   return (

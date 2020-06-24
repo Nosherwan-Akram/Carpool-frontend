@@ -22,7 +22,7 @@ class SearchRide extends Component {
         this.setState({ searchedRides: res.payload });
       })
       .catch((err) => {
-        console.log(err);
+        alert(err);
       });
   };
   showSelectedRide = (ride) => {

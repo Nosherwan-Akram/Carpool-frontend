@@ -18,7 +18,7 @@ class OfferedRides extends React.Component {
         this.setState({ rides: res.payload });
       })
       .catch((err) => {
-        console.log(err);
+        alert(err);
       });
   };
   showSelectedRide = (ride) => {
