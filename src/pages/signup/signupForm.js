@@ -39,7 +39,7 @@ const SignupForm = (props) => {
               </ErrorMessage>
             </div>
             <div className="form-group col-md-6 col-12">
-              <label htmlFor="fullname">Full Name</label>
+              <label htmlFor="username">User Name</label>
               <Field
                 type="text"
                 placeholder="User Name"
