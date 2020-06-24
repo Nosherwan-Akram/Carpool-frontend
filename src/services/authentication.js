@@ -32,7 +32,7 @@ export const GuestRoute = ({ children, ...rest }) => {
         return token ? (
           <Redirect
             to={{
-              pathname: "/searchRride",
+              pathname: "/user/searchRride",
               state: { from: location },
             }}
           />
